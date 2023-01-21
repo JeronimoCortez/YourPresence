@@ -1,5 +1,5 @@
 :root {
-
+    --color-principal: #111;
 }
 
 /*
@@ -22,7 +22,7 @@
     padding: 0 10px !important;
 }
 .navbar-buble {
-    background-color: #111;
+    background-color: var(--color-principal);
     border-radius: 50px;
     float: right;
 }
@@ -83,4 +83,15 @@
 */
 .contacto .brandingLogo {
     display: none;
+}
+
+/*
+* FOOTER
+*/
+.footer {
+    background-color: var(--color-principal);
+}
+.footer-logo {
+    font-size: 30px;
+    color: #FFF;
 }
