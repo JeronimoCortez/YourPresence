@@ -5,13 +5,15 @@
 /*
 * GENERAL
 */
+.hero,
+.nosotros,
+.trabajos {
+    min-height: 600px;
+}
 
 /*
 * HERO
 */
-.hero {
-    min-height: 600px;
-}
 .hero-title {
     display: inline-block;
     width: fit-content;
@@ -31,9 +33,17 @@
 /*
 * NOSOTROS
 */
-.nosotros {
-    height: 600px;
+.nosotros p {
+    text-align: end;
 }
-.nosotros-icon {
-    width: 150px;
+
+.circle {
+    border-radius: 50%;
+    float: right;
+    margin: 2rem;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    shape-outside: border-box;
+    shape-margin: 1rem;
 }

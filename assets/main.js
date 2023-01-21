@@ -5,3 +5,6 @@ window.onscroll = function() {
 
     element1.style.top = posicion * 0.1 + "px";
 }
+
+
+
