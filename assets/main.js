@@ -18,7 +18,7 @@ window.onscroll = function() {
         let tamañoPantalla1 = window.innerHeight / 1.5; 
 
         if (posicionObj1 < tamañoPantalla1) {
-            fadeLeftElem.style.animation = 'fadeLeft 1.5s forwards';
+            fadeLeftElem.style.animation = 'fadeLeft 2s forwards';
         }
     }
         
