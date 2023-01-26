@@ -41,10 +41,56 @@ a {
     z-index: 10;
 }
 
+/* SHAPES */
 .shape {
     position: absolute;
     background: linear-gradient(90deg, #FFA200 0%, #FF5B00 100%);
     z-index: -1;
+}
+.hero-shape {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 67% 33% 35% 65% / 64% 66% 34% 36% ;
+}
+.nosotros-shape1 {
+    left: 30px;
+    height: 180px;
+    width: 180px;
+    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
+}
+.nosotros-shape2 {
+    left: 45px;
+    bottom: 0;
+    height: 160px;
+    width: 160px;
+    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
+}
+.nosotros-shape3 {
+    right: 40px;
+    margin-top: 80px;
+    height: 120px;
+    width: 120px;
+    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
+}
+.trabajos-shape {
+    right: 80px;
+    height: 300px;
+    width: 300px;
+    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
+}
+.contacto-shape {
+    left: 80px;
+    height: 250px;
+    width: 250px;
+    border-radius: 69% 31% 66% 34% / 27% 52% 48% 73%  ;
+}
+.footer-shape {
+    left: 250px;
+    bottom: 110px;
+    height: 150px;
+    width: 150px;
+    border-radius: 69% 31% 66% 34% / 27% 52% 48% 73%  ;
 }
 
 .fadeUp {
@@ -70,6 +116,9 @@ a {
 .navbar-menu {
     padding: 0 10px !important;
 }
+.yp-toggler {
+    color: #FFF !important;
+}
 
 /*
 * HERO
@@ -79,12 +128,6 @@ a {
     width: fit-content;
     margin: 0 auto;
     padding-left: 120px;
-}
-.hero-shape {
-    margin-top: 20px;
-    height: 200px;
-    width: 200px;
-    border-radius: 67% 33% 35% 65% / 64% 66% 34% 36% ;
 }
 
 /*
@@ -116,26 +159,6 @@ a {
     border-radius: 50%;
     top: -20px;
 }
-.nosotros-shape1 {
-    left: 30px;
-    height: 180px;
-    width: 180px;
-    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
-}
-.nosotros-shape2 {
-    left: 45px;
-    bottom: 0;
-    height: 160px;
-    width: 160px;
-    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
-}
-.nosotros-shape3 {
-    right: 40px;
-    margin-top: 80px;
-    height: 120px;
-    width: 120px;
-    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
-}
 
 /*
 * TRABAJOS
@@ -143,14 +166,8 @@ a {
 .trabajos {
     position: relative;
 }
-.trabajos-shape {
-    right: 80px;
-    height: 300px;
-    width: 300px;
-    border-radius: 69% 31% 47% 53% / 39% 71% 29% 61% ;
-}
 .trabajos-mock {
-    width: 500px !important;
+    max-width: 500px !important;
     margin: 0 auto;
 }
 .trabajos-item {
@@ -204,12 +221,6 @@ a {
 .contacto-submit {
     background-color: #111 !important;
 }
-.contacto-shape {
-    left: 80px;
-    height: 250px;
-    width: 250px;
-    border-radius: 69% 31% 66% 34% / 27% 52% 48% 73%  ;
-}
 
 /*
 * FOOTER
@@ -217,6 +228,8 @@ a {
 .footer {
     background: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(15px);
+    width: 90%;
+    margin: 0 auto 20px auto;
 }
 .footer-logo {
     font-weight: 800;
@@ -243,8 +256,10 @@ a {
 
 @keyframes fadeLeft {
     0% {
+        /* opacity: 0; */
     }
     100% {
         margin-left: 0;
+        /* opacity: unset; */
     }
 }
