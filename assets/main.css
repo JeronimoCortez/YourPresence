@@ -166,9 +166,32 @@ a {
 .trabajos {
     position: relative;
 }
+.trabajos-header {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.trabajos-header::before {
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 150px;
+    font-size: 20px;
+    left: -80px;
+    text-align: center;
+    font-weight: 600;
+    width: 250px;
+}
+.trabajos-header.--ecommerse::before {
+    content: 'eCommerse';
+}
+.trabajos-header.--landing::before {
+    content: 'Landing pages';
+}
+.trabajos-header.--institucional::before {
+    content: 'Webs institucionales';
+}
 .trabajos-mock {
     max-width: 500px !important;
-    margin: 0 auto;
 }
 .trabajos-item {
     position: relative;
